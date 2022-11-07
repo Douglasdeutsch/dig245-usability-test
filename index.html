@@ -1,29 +1,145 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<!-- meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>DIG 245 Usability Test</title>
+  <title>DIG 245 Usability Test</title>
 
-<!-- CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/css/styles.css">
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
 
+  <!-- visible content goes here -->
 
-<!-- visible content goes here -->
-<h1>DIG 245 Usability Test</h1>
+  <div class="info">scroll info</div>
+  <div class="info2">Scrollinfo2</div>
 
+  <div class="title-block">
+    <div class="title">
 
-<!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- Boostrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<!-- Project JS -->
-<script src="assets/js/main.js"></script>
+      <div class="dig245>" <h2 id="digtext"> DIG 245 </h2>
+      </div>
+
+      <div id="titletext">
+        <h1 id="title">DIG 245 Usability Test</h1>
+      </div>
+
+      <div id="credits">
+        <text id="credit-text"> Conducted by Douglas Deutsch & Ethan George </text>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="spacing-block">
+  </div>
+
+  <div class="setup">
+    <h2 id="setup">
+      The Setup
+    </h2>
+    <br>
+    <p id="setup-desc">
+      The site presents the results of a usability test on the <a href="https://www.imleagues.com"> im leagues</a> website.
+      We conducted the test using five tasks, each of which was chosen because a typical user would be likely to try these tasks.
+    </p>
+  </div>
+<div class = "contain" id="t1container">
+  <div class="taskd" id="t1-details">
+    <p> This took 1 minute. User had some login trouble, but website was slow and filled with ads.
+    </p>
+  </div>
+  <div class="task" id="task-1">
+    <h3> Task 1 - Login </h3>
+  </div>
+</div>
+
+<img  class="center"src="assets/img/usability-login.jpg">
+
+  <div class="animation-down" id="animation-1">
+    <div class="contain" id="t2container">
+      <div class = "taskd" id ="t2-details">
+        <h4> Find and list the active IM teams for Davidson Fall 2022</h4>
+        <p>
+          User took 5 extra clicks. 40 seconds of time.
+        </p>
+      </div>
+    <div class="task" id="task-2">
+      <h3> Task 2 </h3>
+    </div>
+  </div>
+  </div>
+
+<img  class="center"src="assets/img/usability-active-teams.jpg">
+
+    <div class="animation-down" id="animation-2">
+      <div class="contain" id="t3container">
+        <div class="taskd" id="t3-details">
+          <h4>Find the flickerball team from your freshman hall playing this fall</h4>
+          <p>
+            It took 1 minute for the user to navigate to the correct page
+          </p>
+        </div>
+      <div class="task" id="task-3">
+        <h3> Task 3 </h3>
+      </div>
+    </div>
+    </div>
+
+<img class="center" src="assets/img/usability-freshman-hall.jpg">
+
+      <div class="animation-down" id="animation-3">
+        <div class="contain" id="t4container">
+          <div class="taskd" id="t4-details">
+          <h4>Find the receiving touchdown leader for IM flag football Fall 2022</h4>
+          <p>
+            1 minute (user took different path than we anticipated)
+          </p>
+          </div>
+        <div class="task" id="task-4">
+          <h3> Task 4 </h3>
+        </div>
+
+<img class="center" src="assets/img/usability-touchdowns.jpg">
+
+        </div>
+
+        <div class="animation-down" id="animation-4">
+           <div class="contain" id="t5container">
+          <div class="taskd" id="t5-details">
+          <h4> Inspect element and search for alt text on images. If you can’t find any after 2 minutes, say stop. </h4>
+          <p>
+            1 minute 20 seconds. User found 2 images with alt text. Some form of accessibility.
+          </p>
+        </div>
+
+          <div class="task" id="task-5">
+            <h3> Task 5 </h3>
+          </div>
+
+          </div>
+
+          <img  class="center"src="assets/img/usability-accessibility.jpg">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Boostrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- Project JS -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
