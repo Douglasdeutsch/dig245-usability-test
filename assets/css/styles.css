@@ -1,296 +1,269 @@
+/* trouble shooting ideas:
+- put fonts in the default settings outside of the media queries
+- remove repetative stuff from inside the media queries
+- Just added new min and max for media queries
+- once media queries are working, change all font sizes the rem */
+
 body{
 font-style: "Roboto Mono", monospace;
 
   color: #FFFFFF;
 
 }
-div{
-  background-color: rgba(76, 175, 80, 0.0);
+
+.centerx{
+  display:block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.info{
-  position: fixed;
-  color: orange;
-  z-index: 110;
-}
-.info2{
-  position: fixed;
-  margin-top: 20px;
-  color: orange;
-  z-index: 110;
+
+.title-block{
+  width: 100%;
+  height: 85vh;
+  background-color: #16213E;
+  display: table;
+  position: relative;
 }
 
-@media only screen and (min-width: 1400px){
+.title{
+  position: relative;
+  display: table-cell;
+  margin-left: 40px;
+  margin-top: 10.93rem;
+  vertical-align:middle;
+}
 
-  .center{
-    display:block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .title-block{
-    width: 100%;
-    height: 640px;
-    background-color: #16213E;
-  }
-
-  .title{
-    position: absolute;
-    display: table;
-    margin-left: 40px;
-    margin-top: 175px;
-  }
-
-  #digtext{
-    font-style: "Roboto Mono", monospace;
-    font-size: 45px;
-    font-weight: lighter;
+/* #digtext{
+  display: table-cell;
+  font-size: 45px;
+  font-weight: lighter;
 align: left;
-  }
+} */
 
 #title{
-  font-weight: bolder;
-  font-size: 100px;
-  color:#E94560;
-  align: left;
+  display:table-cell;
+font-weight: bolder;
+font-size:70px;
+color:#E94560;
+align: left;
 }
 
 #credit-text{
-  font-weight: 300;
-  font-size: 30px;
+  display:table-cell;
+font-weight: 300;
+font-size: 30px;
+font-size: 26px;
 }
 
 .spacing-block{
-  width: 100%;
-  height: 272px;
-  background-color: #0F3460;
+width: 100%;
+height: 15vh;
+background-color: #0F3460;
 }
 
 .setup{
-  background-color: #ffffff;
-  position: relative;
-  width: 100%;
-  height: 398px;
-  padding: 40px 40px 20px 40px;
+background-color: #ffffff;
+position: relative;
+width: 100%;
+height: fit-content;
+padding: 3rem 3rem 20px 3rem;
 }
 
 #setup{
-  color: #000000;
-  font-size: 40px;
+color: #000000;
+font-size: 40px;
 
 }
 
 #setup-desc{
-  color: #000000;
-  font-size: 30px;
-  font-weight: lighter;
-  margin-top: 20px;
+color: #000000;
+font-size: 30px;
+font-weight: lighter;
+margin-top: 20px;
 }
 
 
 
 .task{
-  z-index: 100;
-  width: 100%;
-  height: 150px;
-  background-color: #0F3460;
-  margin-top: 12px;
+z-index: 100;
+width: 100%;
+height: 150px;
+background-color: #0F3460;
+margin-top: 12px;
+position: relative;
+display: table;
 }
 
 .taskd{
-  z-index: -100;
-  width: 100%;
-  height: 150px;
-  background-color: #533483;
-  position: absolute;
+z-index: -100;
+width: 100%;
+height: 240px;
+background-color: #533483;
+position: relative;
+display:table;
 }
 
+.conclusion-block{
+width: 100%;
+height: fit-content;
+background-color: #16213E;
 
+padding-left:3rem;
+padding-right: 3rem;
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
 
+.finish-block{
+width: 100%;
+height: 100px;
+background-color: #E94560;
+}
+
+h3{
+font-size: 79px;
+display: table-cell;
+padding-left: 3rem;
+vertical-align: middle;
+}
 h2{
-    text-align: left;
-  }
-  h4{
-    font-size:20px;
-  }
-
-  /**
-  #task-1{
-    z-index: 100;
-    width: 100%;
-    height: 150px;
-    visibility: hidden;
-  }
-  /**#t1-details{
-    z-index: -100;
-    position: absolute;
-    background-color: #533483;
-  }
-  #task-2{
-    z-index: 100;
-    width: 100%;
-    height: 150px;
-    margin-top: 12px;
-    visibility: hidden;
-
-  }
-
-/**  #t2-details{
-    z-index: -100;
-    position: absolute;
-    background-color: #533483;
-  }
-
-  #task-3{
-    width: 100%;
-    height: 150px;
-    margin-top: 12px;
-    visibility: hidden;
-  }
-
-  /**#t3-details{
-    z-index: -100;
-    position: absolute;
-    background-color: #533483;
-  }
-
-
-  #task-4{
-    width: 100%;
-    height: 150px;
-    margin-top: 12px;
-    visibility: hidden;
-
-  }
-
-/**  #t4-details{
-    z-index: -100;
-    position: absolute;
-    background-color: #533483;
-  }
-
-  #task-5{
-    width: 100%;
-    height: 150px;
-    margin-top: 12px;
-    visibility: hidden;
-
-  }
-
-/**  #t5-details{
-    z-index: -100;
-    position: absolute;
-    background-color: #533483;
-  } **/
-
+  text-align: left;
+  font-size: 50px;
+}
+h4{
+  font-size:35px;
 }
 
-@media only screen and (max-width: 428px){
-  .container{
-    width: 100%;
-  }
-  div.title{
-border-color: rgba(255,255,255,1);
-    margin: 12px 0px 12px 0px;
-    padding: 2px;
-  }
-  div.setup{
 
-    position: relative;
-border-color: rgba(255,255,255,1);
+.dcenter{
+  display:table-cell;
+  vertical-align:middle;
+  padding-left:3rem;
+  padding-right: 3rem;
+  font-size:30px;
+  font-weight:lighter;
+}
+
+p{
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 0px) {
+
+  #title{
+
+  font-size: 4.375rem;
+  padding: 3rem;
+
   }
 
-  h2{
-    text-align: center;
+  #credit-text{
+
+  font-size: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  }
+
+  .dcenter{
+    font-size: 1.875rem;
   }
   h4{
-    font-size:20px;
+    font-size: 1.635rem;
   }
-  #task-1{
-    width: 100%;
-    height: 169px;
-border-color: rgba(255,255,255,1);
+  h3{
+    font-size: 4.125rem;
   }
-  #task-2{
-    width: 100%;
-    height: 169px;
-
-border-color: rgba(255,255,255,1);
-    margin-top: 12px;
+  h2{
+    font-size:50px;
   }
-  #task-3{
-    width: 100%;
-    height: 169px;
-border-color: rgba(255,255,255,1);
-
-    margin-top: 12px;
-  }
-  #task-4{
-    width: 100%;
-    height: 169px;
-border-color: rgba(255,255,255,1);
-
-    margin-top: 12px;
-  }
-
-  #task-5{
-    width: 100%;
-    height: 169px;
-border-color: rgba(255,255,255,1);
-    margin-top: 12px;
+  p{
+    font-size: 1.4375rem;
+    font-weight: lighter;
   }
 }
-@media only screen and (min-width: 429px) and (max-width: 1399px){
-  .container{
-    width: 100%;
-  }
-  div.title{
-    margin: 12px 0px 12px 0px;
-    padding: 2px;
-    border-color: rgba(255,255,255,1);
-  }
-  div.setup{
-    position: relative;
 
-    border-color: rgba(255,255,255,1);
+@media screen  and (min-width: 600px){
+
+
+  #title{
+
+  font-size: 6.875rem;
+  padding-left: auto;
+  padding-right: auto;
+
   }
 
-  h2{
-    text-align: center;
+  #credit-text{
+
+  font-size: 2.125rem;
+  }
+  .dcenter{
+    font-size: 1.875rem;
   }
   h4{
-    font-size:20px;
+    font-size: 2.1875rem;
   }
-  #task-1{
-    width: 545px;
-    height: 150px;
-    border-color: rgba(255,255,255,1);
+  h2{
+    font-size:3.125;
   }
-  #task-2{
-    width: 545px;
-    height: 150px;
-    margin-top: 12px;
-    border-color: rgba(255,255,255,1);
+  p{
+    font-size: 1.875rem;
+    font-weight: lighter;
   }
-  #task-3{
-    width: 545px;
-    height: 150px;
-    margin-top: 12px;
-    border-color: rgba(255,255,255,1);
-  }
-  #task-4{
-    width: 100%;
-    height: 150px;
+}
 
-    margin-top: 12px;
-    border-color: rgba(255,255,255,1);
-  }
+ @media screen and (min-width: 1200px){
 
-  #task-5{
-    width: 100%;
-    height: 150px;
-    margin-top: 12px;
-    border-color: rgba(255,255,255,1);
-  }
+
+
+   #title{
+
+   font-size: 17.125rem;
+
+   }
+
+   #credit-text{
+
+   font-size: 6.0rem;
+   }
+   .task{
+   height: 17rem;
+   }
+
+   #setup{
+     font-size: 5.1875rem;
+   }
+   #setup-desc{
+     font-size: 2.375rem;
+   }
+
+   .dcenter{
+     font-size: 2.5rem;
+     font-weight: lighter;
+   }
+h2{
+  font-size:5.1875rem;
+}
+   .conclusion-block{
+     font-size: 2.5rem;
+     font-weight: lighter;
+     padding-left: 3rem;
+     padding-right: 3rem;
+     padding-top: 20px;
+     padding-bottom: 20px;
+   }
+   h3{
+     font-size: 6.2rem;
+   }
+   h4{
+     font-size:
+   }
+
+
+
 }
